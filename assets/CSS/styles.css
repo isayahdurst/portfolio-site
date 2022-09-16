@@ -1,0 +1,183 @@
+:root {
+  --red-accent: #ff004f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #080808;
+  color: #fff;
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+header .logo {
+  width: 140px;
+  font-size: 50px;
+  font-weight: 400;
+  padding: 10px;
+}
+
+/**** Navigation Bar ****/
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo alterations */
+
+.logo::first-letter {
+  color: var(--red-accent);
+}
+
+.logo::after {
+  content: ">";
+  color: var(--red-accent);
+}
+
+.logo {
+  left: 0;
+}
+
+/** Navigation Items **/
+
+a {
+  text-decoration: none;
+}
+
+.navigation li {
+  display: inline;
+  font-size: 25px;
+}
+
+.navigation li a {
+  position: relative;
+  margin-left: 20px;
+  color: white;
+}
+
+/* Creates a bottom accent underneath navigation items, hidden with width 0 by default */
+.navigation li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  width: 0;
+  height: 4px;
+  background: #ff004f;
+  transition: all 0.5s;
+}
+
+/* Causes accent to appear by increasing width to 100% */
+.navigation li a:hover::after {
+  width: 100%;
+}
+
+/**** Header text ****/
+
+.header-text {
+  margin-top: 20%;
+  font-size: 30px;
+}
+
+.header-text h1 {
+  font-size: 60px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+/**** about section ****/
+
+#about {
+  padding: 80px 0;
+  color: #ababab;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+}
+
+.about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about-col-2 {
+  flex-basis: 60%;
+}
+
+.sub-title {
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.tab-titles {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  width: 0%;
+  height: 4px;
+  background: #ff004f;
+  transition: all 0.5s;
+}
+
+/* Sets accent underneath corresponding tab */
+.active-link:after {
+  width: 50%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.tab-contents ul li span {
+  color: #b54769;
+  font-size: 18px;
+}
+
+.hide-tab {
+  display: none;
+}
