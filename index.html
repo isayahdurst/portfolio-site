@@ -12,24 +12,24 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/CSS/styles.css" />
+    <script src="https://kit.fontawesome.com/298aab2044.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <header>
       <div class="container">
         <nav class="navigation">
-          <h1 class="logo">&ltIsayah</h1>
+          <h1 class="logo">ISAYAH DURST</h1>
           <ul>
             <li class="nav-item"><a href="#home">Home</a></li>
             <li class="nav-item"><a href="#about">About</a></li>
-            <li class="nav-item"><a href="#services">Services</a></li>
             <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
             <li class="nav-item"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <section class="header-text">
+        <section id="home" class="header-text">
           <p>Founder/CEO/Developer</p>
-          <h1>Hi, I'm Isayah.</h1>
+          <h1>Hi, I'm <span class=name>Isayah</span>.</h1>
         </section>
       </div>
     </header>
@@ -37,18 +37,13 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="/assets/images/user.png" alt="about me" />
+            <img src="./assets/images/user.png" alt="about me" />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <div class="tab-titles">
               <p id="skills-tab" class="tab-links active-link">Skills</p>
@@ -66,12 +61,12 @@
                 </li>
               </ul>
             </div>
-            <div id="experience" class="tab-contents">
+            <div id="experience" class="tab-contents hide-tab">
               <ul>
                 <li><span>2021 - Current</span><br />CEO at Funge App, Inc.</li>
               </ul>
             </div>
-            <div id="education" class="tab-contents">
+            <div id="education" class="tab-contents hide-tab">
               <ul>
                 <li><span>2022</span><br />UC Berkeley Extension</li>
               </ul>
@@ -79,6 +74,45 @@
           </div>
         </div>
       </div>
+    </section>
+    <!-- Services -->
+    <section id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work first-app">
+            <img src="./assets/images/funge-app.png" alt="Portfolio Preview Image">
+            <div class="layer">
+              <h3>Funge App, Inc</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a href="#"><i class="fa-duotone fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./assets/images/work-2.png" alt="Portfolio Preview Image">
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a href="#"><i class="fa-duotone fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./assets/images/work-3.png" alt="Portfolio Preview Image">
+            <div class="layer">
+              <h3>Random App, Inc</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a href="#"><i class="fa-duotone fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="see-more">See More</button>
+        </div>
+      </div>
+
     </section>
     <script src="./assets/Scripts/script.js"></script>
   </body>
