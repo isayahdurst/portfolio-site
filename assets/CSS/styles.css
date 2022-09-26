@@ -399,4 +399,6 @@ form .submit-btn {
 /* -- CSS for small screns  */
 
 @media screen and (max-width: 600px) {
-}
+  header {
+    background-image: url("../images/phone-resolution.png");
+  }
